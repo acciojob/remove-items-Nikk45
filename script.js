@@ -1,8 +1,7 @@
- function removeColor() {
+function removeColor() {
     const selectElement = document.getElementById("colorSelect");
-    const selectedValue = selectElement.value;
+    const selectedIndex = selectElement.selectedIndex;
 
-    // Find the option with the selected value and remove it
-    const optionToRemove = selectElement.querySelector(`option[value="${selectedValue}"]`);
-    optionToRemove.remove();
+    // Remove the option at the selected index
+    selectElement.remove(selectedIndex);
   }
